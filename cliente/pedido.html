@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haz tu pedido</title>
+</head>
+<body>
+    <h1>Haz tu pedido con nosotros!</h1>
+    <form action="pedido.js">
+        <Label for="nombre">Nombre de quien realiza el pedido:</Label><br>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre"><br>
+        <label for="telefono">Telefono de contacto:</label><br>
+        <input type="number" name="telefono" id="telefono" placeholder="Telefono"><br>
+        <label for="correo">Email de contacto: </label><br>
+        <input type="email" name="email" id="email" placeholder="email">
+        
+        <br><br>
+        <p>Elige el sabor del pan</p>
+        <input type="checkbox" name="panFresa" id="panFresa" value="panFresa">
+        <label for="fresa"> Fresa</label><br>
+        <input type="checkbox" name="panVainilla" id="panVainilla" value="panVainilla">
+        <label for="vainilla"> Vainilla</label><br>
+        <input type="checkbox" name="panChocolate" id="panChocolate" value="panChocolate">
+        <label for="chocolate"> Chocolate</label>
+        <br><br>
+
+        <p>Elige el sabor del relleno</p>
+
+        <input type="checkbox" name="rellenoChantilly" id="rellenoChantilly" value="rellenoCantilly">
+        <label for="rellenoChantilly">Relleno de Chantilly</label><br>
+        <input type="checkbox" name="rellenoLeches" id="rellenoLeches" value="rellenLeches">
+        <label for="rellenoLeches">Relleno de Tres Leches</label><br>
+        <input type="checkbox" name="rellenoPastelera" id="rellenoPastelera" value="rellenPastelera">
+        <label for="rellenoPastelera">Relleno de Crema Pastelera</label><br>
+        <input type="checkbox" name="rellenoKiwi" id="rellenoKiwi" value="rellenoKiwi">
+        <label for="rellenoKiwi">Relleno de Kiwi</label><br>
+        <input type="checkbox" name="rellenoDurazno" id="rellenoDurazno" value="rellenoDurazno">
+        <label for="rellenoDurazno">Relleno de Durazno</label><br>
+        <input type="checkbox" name="rellenoFresa" id="rellenoFresa" value="rellenoFresa">
+        <label for="rellenoFresa">Relleno de Fresas</label><br>
+        <br><br>
+
+        <p>Elige la cubierta</p>
+        <input type="checkbox" name="cubiertaPastelera" id="cubiertaPastelera" value="cubiertaPastelera">
+        <label for="cubiertaPastelera">Cubierta de Crema pastelera</label><br>
+        <input type="checkbox" name="cubiertaChantilly" id="cubiertaChantilly" value="cubiertaChantilly">
+        <label for="cubiertaChantilly">Cubierta de Chantilly</label><br>
+        <input type="checkbox" name="cubiertaFondant" id="cubiertaFondant" value="cubiertaFondant">
+        <label for="cubiertaFondant">Cubierta de Fondant</label><br>
+        <input type="checkbox" name="cubiertaChocolate" id="cubiertaChocolate" value="cubiertaChocolate">
+        <label for="cubiertaChocolate">Cubierta de Chocolate</label><br>
+        <input type="checkbox" name="cubiertaPinon" id="cubiertaPinon" value="cubiertaPinon">
+        <label for="cubiertaPinon">Cubierta de piñón</label><br>
+        <br><br>
+
+        <p>Elige los extras de tu pastel</p>
+        <input type="checkbox" name="extraConejitos" id="extraConejitos" value="extraConejitos">
+        <label for="extraConejitos">Conejitos de chocolate</label><br>
+        <input type="checkbox" name="extraTabletas" id="extraTabletas" value="extraTabletas">
+        <label for="extraTabletas">Tabletas de Chocolate</label><br>
+        <input type="checkbox" name="extraRosas" id="extraRosas" value="extraRosas">
+        <label for="extraRosas">Rosas de Chantilly</label><br>
+        <input type="checkbox" name="extraDurazno" id="extraDurazno" value="extraDurazno">
+        <label for="extraDurazno">Duraznos</label><br>
+        <input type="checkbox" name="extraFresa" id="extraFresa" value="extra">
+        <label for="extrFresaa">Fresas</label><br>
+        <input type="checkbox" name="extraKiwi" id="extraKiwi" value="extraKiwi">
+        <label for="extraKiwi">Kiwis</label><br>
+        <input type="checkbox" name="extraFramb" id="extraFramb" value="extraFramb">
+        <label for="extraFramb">Frambuesas</label><br>
+        <br><br>
+
+        <p>Para cuantas personas?</p>
+        <select name="personas" id="personas">
+            <option value="cuatro">4</option>
+            <option value="ocho">8</option>
+            <option value="doce">12</option>
+            <option value="veinte">20</option>
+        </select>
+
+        <h4>Necesitas especificar algún detalle extra o deseas realizar un pedido distinto? 
+        </h4>
+        <textarea name="detalles" rows="10" cols="50" placeholder="Cuentanos lo que necesitas!"></textarea>
+        <br><br>
+
+        <input type="reset" value="Restablecer">
+        <input type="submit" value="Hacer pedido">
+    </form>
+
+
+</body>
+</html>
